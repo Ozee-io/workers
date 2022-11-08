@@ -5,6 +5,14 @@ on:
     branches:
       - 'trunk'
 
+  pull_request_target:
+    types: [opened, reopened]
+    branches:
+      - 'trunk'
+
+  schedule:
+    - cron:  '0 0 * * WED'
+
 env:
   REGISTRY: ghcr.io
 
