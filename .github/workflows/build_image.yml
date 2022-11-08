@@ -49,5 +49,5 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ env.REGISTRY }}/ozee-io/terraform:${{ matrix.version }}
           build-args: |
-              install_script="terraform.sh"
-              minor_version="${{ matrix.version }}"
+              install_script=terraform.sh
+              minor_version=${{ matrix.version }}
