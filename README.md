@@ -1,5 +1,7 @@
 <img src="https://www.ozee.io/logos/vector/Ozee_logo_2c.svg" alt="drawing" width="200"/>
 
+[![build images](https://github.com/Ozee-io/workers/actions/workflows/build_image.yml/badge.svg)](https://github.com/Ozee-io/workers/actions/workflows/build_image.yml)
+
 # Remote Workers
 This repository contains scripts to create and manage the remote workers used by Ozee for execution.
 
