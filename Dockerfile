@@ -18,7 +18,7 @@ RUN adduser --disabled-password --uid=2123 ozee
 
 COPY ./scripts/${install_script} ./script.sh
 
-RUN chmod 777 script.sh && ./script.sh ${minor_version} && rm -rf ./script.sh
+RUN chmod +x script.sh && ./script.sh ${minor_version} && rm -rf ./script.sh
 WORKDIR /worker
 
 USER ozee
